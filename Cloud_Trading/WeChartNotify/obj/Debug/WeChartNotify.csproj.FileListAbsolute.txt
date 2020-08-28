@@ -1,0 +1,117 @@
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\WeChartNotify.exe.config
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\WeChartNotify.exe
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\WeChartNotify.pdb
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\obj\Debug\WeChartNotify.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\obj\Debug\WeChartNotify.Form1.resources
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\obj\Debug\WeChartNotify.Properties.Resources.resources
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\obj\Debug\WeChartNotify.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\obj\Debug\WeChartNotify.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\obj\Debug\WeChartNotify.exe
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\obj\Debug\WeChartNotify.pdb
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\DevExpress.Data.v17.1.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\DevExpress.Printing.v17.1.Core.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\DevExpress.Utils.v17.1.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\DevExpress.Data.v17.1.xml
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\DevExpress.Utils.v17.1.xml
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\WeChartNotify\WeChartNotify\obj\Debug\WeChartNotify.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\WeChartNotify.exe.config
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\WeChartNotify.exe
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\WeChartNotify.pdb
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\DevExpress.Pdf.v17.1.Core.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\DevExpress.Data.v17.1.xml
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\DevExpress.Printing.v17.1.Core.xml
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\DevExpress.Utils.v17.1.xml
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\DevExpress.Pdf.v17.1.Core.xml
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\de\DevExpress.Data.v17.1.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\es\DevExpress.Data.v17.1.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\ja\DevExpress.Data.v17.1.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\ru\DevExpress.Data.v17.1.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\de\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\es\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\ja\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\ru\DevExpress.Printing.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\de\DevExpress.Utils.v17.1.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\es\DevExpress.Utils.v17.1.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\ja\DevExpress.Utils.v17.1.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\ru\DevExpress.Utils.v17.1.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\de\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\es\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\ja\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\ru\DevExpress.Pdf.v17.1.Core.resources.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\Interop.WIA.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.Form1.resources
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.FormAquaScreenHoldString.resources
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.FormHelp.resources
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.FormShootPictureHoldString.resources
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.IBTWS.resources
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.Properties.Resources.resources
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.csproj.CopyComplete
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.exe
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.pdb
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.FormRealComputerInfo.resources
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.FormMCCrash.resources
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.FormPixelCheck.resources
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.FormSlideRecorde.resources
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.FormSymbolInspireMonthNotify.resources
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.WallStreetEventDriveForm.resources
+C:\Users\Administrator\Desktop\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.FormProgram.resources
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\Interop.WIA.dll
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.Form1.resources
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.FormHelp.resources
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.Properties.Resources.resources
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.exe
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.pdb
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\bin\Debug\WeChartNotify.exe.config
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\bin\Debug\WeChartNotify.exe
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\bin\Debug\WeChartNotify.pdb
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.csproj.CopyComplete
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\bin\Debug\SmileWei.EmbeddedApp.dll
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.Form2.resources
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\新版\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.FormHandle.resources
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\Interop.WIA.dll
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.Form1.resources
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.Form2.resources
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.FormHandle.resources
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.FormHelp.resources
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.Properties.Resources.resources
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.exe
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.pdb
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\bin\Debug\WeChartNotify.exe.config
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\bin\Debug\WeChartNotify.exe
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\bin\Debug\WeChartNotify.pdb
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\bin\Debug\SmileWei.EmbeddedApp.dll
+C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.csproj.CopyComplete
