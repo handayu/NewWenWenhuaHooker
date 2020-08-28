@@ -31,6 +31,7 @@ namespace WeChartNotify
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -450,8 +451,7 @@ namespace WeChartNotify
             this.richTextBox1.ReadOnly = true;
             this.richTextBox1.Size = new System.Drawing.Size(364, 96);
             this.richTextBox1.TabIndex = 18;
-            this.richTextBox1.Text = "备注:\n手数和类型暂时全部为文华默认的1/对手价,Handle也可以暂时不做映射(MC只需要打印时间，品种，方向，股指其他默认即可)\n\nmulticharts打印" +
-    "信号:\nClearPrintLog;\nprint(date,\"|\",time,\"|\",close,\"|\",symbol,\"|\",\"B\");   \n";
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
             // timer2
             // 
@@ -475,6 +475,8 @@ namespace WeChartNotify
             this.Controls.Add(this.label2);
             this.Name = "Form1";
             this.Text = "股指Multicharts-文华财经信号映射工具";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form_Closing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -36,6 +36,26 @@ namespace WeChartNotify
             this.timer1.Interval = 10;//timer控件的执行频率
             this.textBox_Ins.Text = "IF2009";
 
+            InitTextBox();
+
+        }
+
+        private void InitTextBox()
+        {
+            string path = System.Windows.Forms.Application.StartupPath + "\\config.ini";
+            IniOperationClass c = new IniOperationClass(path);
+
+            this.textBox_InsHandle.Text = c.IniReadValue("Config", "InsHandle");
+
+            this.textBox_BuyX.Text = c.IniReadValue("Config", "BX");
+            this.textBox_BuyX.Text = c.IniReadValue("Config", "BY");
+            this.textBox_SellShortX.Text = c.IniReadValue("Config", "SX");
+            this.textBox_SellShortY.Text = c.IniReadValue("Config", "SY");
+            this.textBox_CoverX.Text = c.IniReadValue("Config", "CX");
+            this.textBox_CoverY.Text = c.IniReadValue("Config", "CY");
+
+            this.textBox_OutputHandle.Text = c.IniReadValue("Config", "MCHandle");
+
         }
 
         public enum MouseEventFlags
@@ -75,7 +95,7 @@ namespace WeChartNotify
             if (Control.MousePosition.X.ToString().CompareTo(m_nowX) == 0
                 && Control.MousePosition.Y.ToString().CompareTo(m_nowY) == 0
                 && m_spreadTime >= 2000)
-            {             
+            {
                 // 1.buy坐标
                 if (this.textBox_BuyX.Text == "" && this.textBox_BuyY.Text == "")
                 {
@@ -162,7 +182,7 @@ namespace WeChartNotify
         /// </summary>
         /// <param name="diffX"></param>
         /// <param name="diffY"></param>
-        public void  SetingMovingXY(int diffX,int diffY)
+        public void SetingMovingXY(int diffX, int diffY)
         {
             //Content
             int cX = 0;
@@ -322,14 +342,14 @@ namespace WeChartNotify
         {
             if (this.checkBox_TimeEvent.Checked)
             {
-                this.timer1.Enabled = true;
-                this.timer1.Start();
+                this.timer2.Enabled = true;
+                this.timer2.Start();
                 return;
             }
             else
             {
-                this.timer1.Enabled = false;
-                this.timer1.Stop();
+                this.timer2.Enabled = false;
+                this.timer2.Stop();
                 return;
             }
         }
@@ -345,14 +365,85 @@ namespace WeChartNotify
             if (content != null && content != "" && content != m_startStr)
             {
                 this.richTextBox_MCInfos.AppendText(content + "\n");
+                if (richTextBox_MCInfos.Lines.Length > 100)
+                { richTextBox_MCInfos.Clear(); }
 
-                //拆解下单
+                //========richtextbox滚动条自动移至最后一条记录
+                //让文本框获取焦点   
+                richTextBox_MCInfos.Focus();
+                //设置光标的位置到文本尾   
+                richTextBox_MCInfos.Select(richTextBox_MCInfos.TextLength, 0);
+                //滚动到控件光标处   
+                richTextBox_MCInfos.ScrollToCaret();
+                //拆解下单-MC打印的格式如下
+                //ClearPrintLog;
+                //print(date, "|", time, "|", close, "|", symbol, "|", "B");
+                //1200828.00 | 1500.00 | 4844.00 | CFFEX.IF 2009 | B
+                //其中最后一个字段为B/S/C；买入-卖空-平仓，文华可以自动判断
 
+                string[] conStrArray = content.Split('|');
+                string datetime = conStrArray[0].Trim() + conStrArray[0].Trim();
+                string price = conStrArray[2].Trim();
+                string insArray = conStrArray[3].Trim();
+                string[] ins2 = insArray.Split('.');
+                string ins = ins2[1].Replace(" ","");
 
+                string side = conStrArray[4].Trim();
 
+                //下单
+                ActionOrder(ins, side);
 
                 m_startStr = content;
             }
+        }
+
+        private void ActionOrder(string ins, string side)
+        {
+            //输入合约；
+            if (this.textBox_InsHandle.Text == "") return;
+            SendString(this.textBox_InsHandle.Text, ins);
+            //下单
+            if(side == "B")
+            {
+                button_Buy_Click(null, null);
+                return;
+            }
+
+            if (side == "S")
+            {
+                button_SellShort_Click(null, null);
+                return;
+            }
+
+            if (side == "C")
+            {
+                button_Cover_Click(null, null);
+                return;
+            }
+
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+
+        }
+
+        private void Form_Closing(object sender, FormClosingEventArgs e)
+        {
+            string path = System.Windows.Forms.Application.StartupPath + "\\config.ini";
+            IniOperationClass c = new IniOperationClass(path);
+            c.IniWriteValue("Config", "InsHandle", this.textBox_InsHandle.Text);
+            c.IniWriteValue("Config", "BX", this.textBox_BuyX.Text);
+            c.IniWriteValue("Config", "BY", this.textBox_BuyY.Text);
+            c.IniWriteValue("Config", "SX", this.textBox_SellShortX.Text);
+            c.IniWriteValue("Config", "SY", this.textBox_SellShortY.Text);
+            c.IniWriteValue("Config", "CX", this.textBox_CoverX.Text);
+            c.IniWriteValue("Config", "CY", this.textBox_CoverY.Text);
+
+            c.IniWriteValue("Config", "MCHandle", this.textBox_OutputHandle.Text);
+
+            this.Hide();
+            e.Cancel = true;
         }
     }
 }

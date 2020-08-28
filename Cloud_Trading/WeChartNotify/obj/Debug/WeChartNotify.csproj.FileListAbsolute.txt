@@ -115,3 +115,21 @@ C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChar
 C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\bin\Debug\SmileWei.EmbeddedApp.dll
 C:\Users\Administrator\Desktop\NewWeChart - 副本\Cloud_Trading - 副本\WeChartNotify\obj\Debug\WeChartNotify.csproj.CopyComplete
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\bin\Debug\WeChartNotify.exe.config
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\bin\Debug\WeChartNotify.exe
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\bin\Debug\WeChartNotify.pdb
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\bin\Debug\SmileWei.EmbeddedApp.dll
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\Interop.WIA.dll
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.csproj.ResolveComReference.cache
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.Form1.resources
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.Form2.resources
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.FormHandle.resources
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.FormHelp.resources
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.Properties.Resources.resources
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.csproj.GenerateResource.cache
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.csproj.CopyComplete
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.exe
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.pdb
