@@ -73,6 +73,8 @@ namespace WeChartNotify
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.richTextBox_Loginfo = new System.Windows.Forms.RichTextBox();
+            this.richTextBox_Notify = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -106,24 +108,24 @@ namespace WeChartNotify
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.textBox_Ins);
             this.groupBox1.Controls.Add(this.button_InsTest);
-            this.groupBox1.Location = new System.Drawing.Point(4, 39);
+            this.groupBox1.Location = new System.Drawing.Point(4, 27);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(364, 54);
+            this.groupBox1.Size = new System.Drawing.Size(317, 45);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "合约测试";
             // 
             // textBox_InsHandle
             // 
-            this.textBox_InsHandle.Location = new System.Drawing.Point(129, 24);
+            this.textBox_InsHandle.Location = new System.Drawing.Point(129, 17);
             this.textBox_InsHandle.Name = "textBox_InsHandle";
-            this.textBox_InsHandle.Size = new System.Drawing.Size(93, 21);
+            this.textBox_InsHandle.Size = new System.Drawing.Size(67, 21);
             this.textBox_InsHandle.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 27);
+            this.label5.Location = new System.Drawing.Point(11, 20);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 12);
             this.label5.TabIndex = 9;
@@ -131,7 +133,7 @@ namespace WeChartNotify
             // 
             // textBox_Ins
             // 
-            this.textBox_Ins.Location = new System.Drawing.Point(53, 24);
+            this.textBox_Ins.Location = new System.Drawing.Point(53, 17);
             this.textBox_Ins.Name = "textBox_Ins";
             this.textBox_Ins.Size = new System.Drawing.Size(64, 21);
             this.textBox_Ins.TabIndex = 8;
@@ -139,9 +141,9 @@ namespace WeChartNotify
             // 
             // button_InsTest
             // 
-            this.button_InsTest.Location = new System.Drawing.Point(228, 22);
+            this.button_InsTest.Location = new System.Drawing.Point(202, 15);
             this.button_InsTest.Name = "button_InsTest";
-            this.button_InsTest.Size = new System.Drawing.Size(130, 23);
+            this.button_InsTest.Size = new System.Drawing.Size(90, 23);
             this.button_InsTest.TabIndex = 10;
             this.button_InsTest.Text = "合约输入测试";
             this.button_InsTest.Click += new System.EventHandler(this.Button_testInput_Click);
@@ -173,9 +175,9 @@ namespace WeChartNotify
             this.groupBox2.Controls.Add(this.textBox_BuyY);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.textBox_BuyX);
-            this.groupBox2.Location = new System.Drawing.Point(4, 99);
+            this.groupBox2.Location = new System.Drawing.Point(4, 72);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(364, 53);
+            this.groupBox2.Size = new System.Drawing.Size(317, 39);
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "买入测试";
@@ -183,7 +185,7 @@ namespace WeChartNotify
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 30);
+            this.label7.Location = new System.Drawing.Point(12, 18);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(35, 12);
             this.label7.TabIndex = 3;
@@ -191,9 +193,9 @@ namespace WeChartNotify
             // 
             // button_Buy
             // 
-            this.button_Buy.Location = new System.Drawing.Point(248, 25);
+            this.button_Buy.Location = new System.Drawing.Point(248, 12);
             this.button_Buy.Name = "button_Buy";
-            this.button_Buy.Size = new System.Drawing.Size(110, 23);
+            this.button_Buy.Size = new System.Drawing.Size(55, 23);
             this.button_Buy.TabIndex = 0;
             this.button_Buy.Text = "买";
             this.button_Buy.UseVisualStyleBackColor = true;
@@ -201,7 +203,7 @@ namespace WeChartNotify
             // 
             // textBox_BuyY
             // 
-            this.textBox_BuyY.Location = new System.Drawing.Point(168, 23);
+            this.textBox_BuyY.Location = new System.Drawing.Point(168, 11);
             this.textBox_BuyY.Name = "textBox_BuyY";
             this.textBox_BuyY.Size = new System.Drawing.Size(64, 21);
             this.textBox_BuyY.TabIndex = 5;
@@ -209,7 +211,7 @@ namespace WeChartNotify
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(127, 30);
+            this.label8.Location = new System.Drawing.Point(127, 17);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(35, 12);
             this.label8.TabIndex = 4;
@@ -217,7 +219,7 @@ namespace WeChartNotify
             // 
             // textBox_BuyX
             // 
-            this.textBox_BuyX.Location = new System.Drawing.Point(53, 23);
+            this.textBox_BuyX.Location = new System.Drawing.Point(53, 13);
             this.textBox_BuyX.Name = "textBox_BuyX";
             this.textBox_BuyX.Size = new System.Drawing.Size(64, 21);
             this.textBox_BuyX.TabIndex = 0;
@@ -229,9 +231,9 @@ namespace WeChartNotify
             this.groupBox4.Controls.Add(this.textBox_SellShortY);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.textBox_SellShortX);
-            this.groupBox4.Location = new System.Drawing.Point(4, 159);
+            this.groupBox4.Location = new System.Drawing.Point(4, 111);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(364, 47);
+            this.groupBox4.Size = new System.Drawing.Size(317, 47);
             this.groupBox4.TabIndex = 13;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "卖空测试";
@@ -239,7 +241,7 @@ namespace WeChartNotify
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(11, 27);
+            this.label9.Location = new System.Drawing.Point(11, 24);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(35, 12);
             this.label9.TabIndex = 3;
@@ -249,7 +251,7 @@ namespace WeChartNotify
             // 
             this.button_SellShort.Location = new System.Drawing.Point(248, 16);
             this.button_SellShort.Name = "button_SellShort";
-            this.button_SellShort.Size = new System.Drawing.Size(110, 23);
+            this.button_SellShort.Size = new System.Drawing.Size(55, 23);
             this.button_SellShort.TabIndex = 0;
             this.button_SellShort.Text = "卖";
             this.button_SellShort.UseVisualStyleBackColor = true;
@@ -265,7 +267,7 @@ namespace WeChartNotify
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(127, 25);
+            this.label10.Location = new System.Drawing.Point(127, 23);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(35, 12);
             this.label10.TabIndex = 4;
@@ -282,18 +284,18 @@ namespace WeChartNotify
             // 
             this.groupBox5.Controls.Add(this.button_AutoSetingXY);
             this.groupBox5.Controls.Add(this.button_Clear);
-            this.groupBox5.Location = new System.Drawing.Point(371, 39);
+            this.groupBox5.Location = new System.Drawing.Point(326, 6);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(353, 96);
+            this.groupBox5.Size = new System.Drawing.Size(230, 81);
             this.groupBox5.TabIndex = 14;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "自动追踪坐标设置";
             // 
             // button_AutoSetingXY
             // 
-            this.button_AutoSetingXY.Location = new System.Drawing.Point(53, 22);
+            this.button_AutoSetingXY.Location = new System.Drawing.Point(15, 20);
             this.button_AutoSetingXY.Name = "button_AutoSetingXY";
-            this.button_AutoSetingXY.Size = new System.Drawing.Size(276, 23);
+            this.button_AutoSetingXY.Size = new System.Drawing.Size(110, 23);
             this.button_AutoSetingXY.TabIndex = 1;
             this.button_AutoSetingXY.Text = "自动设置XY追踪";
             this.button_AutoSetingXY.UseVisualStyleBackColor = true;
@@ -301,9 +303,9 @@ namespace WeChartNotify
             // 
             // button_Clear
             // 
-            this.button_Clear.Location = new System.Drawing.Point(53, 52);
+            this.button_Clear.Location = new System.Drawing.Point(15, 49);
             this.button_Clear.Name = "button_Clear";
-            this.button_Clear.Size = new System.Drawing.Size(276, 23);
+            this.button_Clear.Size = new System.Drawing.Size(110, 23);
             this.button_Clear.TabIndex = 0;
             this.button_Clear.Text = "清空所有";
             this.button_Clear.UseVisualStyleBackColor = true;
@@ -316,9 +318,9 @@ namespace WeChartNotify
             this.groupBox3.Controls.Add(this.textBox_CoverY);
             this.groupBox3.Controls.Add(this.label11);
             this.groupBox3.Controls.Add(this.textBox_CoverX);
-            this.groupBox3.Location = new System.Drawing.Point(4, 212);
+            this.groupBox3.Location = new System.Drawing.Point(4, 159);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(364, 47);
+            this.groupBox3.Size = new System.Drawing.Size(317, 47);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "平仓测试";
@@ -326,7 +328,7 @@ namespace WeChartNotify
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 27);
+            this.label6.Location = new System.Drawing.Point(11, 23);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 12);
             this.label6.TabIndex = 3;
@@ -336,7 +338,7 @@ namespace WeChartNotify
             // 
             this.button_Cover.Location = new System.Drawing.Point(248, 16);
             this.button_Cover.Name = "button_Cover";
-            this.button_Cover.Size = new System.Drawing.Size(110, 23);
+            this.button_Cover.Size = new System.Drawing.Size(55, 23);
             this.button_Cover.TabIndex = 0;
             this.button_Cover.Text = "平仓";
             this.button_Cover.UseVisualStyleBackColor = true;
@@ -352,7 +354,7 @@ namespace WeChartNotify
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(127, 25);
+            this.label11.Location = new System.Drawing.Point(127, 23);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(35, 12);
             this.label11.TabIndex = 4;
@@ -369,7 +371,7 @@ namespace WeChartNotify
             // 
             this.richTextBox_MCInfos.Location = new System.Drawing.Point(7, 44);
             this.richTextBox_MCInfos.Name = "richTextBox_MCInfos";
-            this.richTextBox_MCInfos.Size = new System.Drawing.Size(311, 53);
+            this.richTextBox_MCInfos.Size = new System.Drawing.Size(207, 53);
             this.richTextBox_MCInfos.TabIndex = 1;
             this.richTextBox_MCInfos.Text = "";
             // 
@@ -379,7 +381,7 @@ namespace WeChartNotify
             this.groupBox6.Controls.Add(this.checkBox_TimeEvent);
             this.groupBox6.Location = new System.Drawing.Point(5, 108);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(324, 112);
+            this.groupBox6.Size = new System.Drawing.Size(220, 112);
             this.groupBox6.TabIndex = 22;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "时钟定时器扫描并下单";
@@ -399,7 +401,7 @@ namespace WeChartNotify
             // 
             this.textBox_outputInfo.Location = new System.Drawing.Point(6, 53);
             this.textBox_outputInfo.Name = "textBox_outputInfo";
-            this.textBox_outputInfo.Size = new System.Drawing.Size(317, 21);
+            this.textBox_outputInfo.Size = new System.Drawing.Size(183, 21);
             this.textBox_outputInfo.TabIndex = 21;
             // 
             // button_OutPut
@@ -407,9 +409,9 @@ namespace WeChartNotify
             this.button_OutPut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.button_OutPut.Location = new System.Drawing.Point(5, 78);
             this.button_OutPut.Name = "button_OutPut";
-            this.button_OutPut.Size = new System.Drawing.Size(318, 23);
+            this.button_OutPut.Size = new System.Drawing.Size(184, 23);
             this.button_OutPut.TabIndex = 20;
-            this.button_OutPut.Text = "获取输出内容并清空输出窗口";
+            this.button_OutPut.Text = "获取输出内容";
             this.button_OutPut.UseVisualStyleBackColor = false;
             this.button_OutPut.Click += new System.EventHandler(this.Button_OutPut_Click);
             // 
@@ -424,9 +426,9 @@ namespace WeChartNotify
             // 
             // textBox_OutputHandle
             // 
-            this.textBox_OutputHandle.Location = new System.Drawing.Point(104, 26);
+            this.textBox_OutputHandle.Location = new System.Drawing.Point(92, 26);
             this.textBox_OutputHandle.Name = "textBox_OutputHandle";
-            this.textBox_OutputHandle.Size = new System.Drawing.Size(219, 21);
+            this.textBox_OutputHandle.Size = new System.Drawing.Size(97, 21);
             this.textBox_OutputHandle.TabIndex = 19;
             // 
             // groupBox7
@@ -436,9 +438,9 @@ namespace WeChartNotify
             this.groupBox7.Controls.Add(this.button_OutPut);
             this.groupBox7.Controls.Add(this.label3);
             this.groupBox7.Controls.Add(this.textBox_OutputHandle);
-            this.groupBox7.Location = new System.Drawing.Point(374, 141);
+            this.groupBox7.Location = new System.Drawing.Point(328, 92);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(350, 226);
+            this.groupBox7.Size = new System.Drawing.Size(231, 226);
             this.groupBox7.TabIndex = 17;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Multicharts下单信号获取";
@@ -446,10 +448,10 @@ namespace WeChartNotify
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.richTextBox1.Location = new System.Drawing.Point(4, 270);
+            this.richTextBox1.Location = new System.Drawing.Point(4, 208);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(364, 96);
+            this.richTextBox1.Size = new System.Drawing.Size(317, 104);
             this.richTextBox1.TabIndex = 18;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -457,11 +459,33 @@ namespace WeChartNotify
             // 
             this.timer2.Tick += new System.EventHandler(this.TimerEvent_MCOutput);
             // 
+            // richTextBox_Loginfo
+            // 
+            this.richTextBox_Loginfo.Location = new System.Drawing.Point(4, 321);
+            this.richTextBox_Loginfo.Name = "richTextBox_Loginfo";
+            this.richTextBox_Loginfo.Size = new System.Drawing.Size(555, 53);
+            this.richTextBox_Loginfo.TabIndex = 2;
+            this.richTextBox_Loginfo.Text = "";
+            // 
+            // richTextBox_Notify
+            // 
+            this.richTextBox_Notify.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.richTextBox_Notify.ForeColor = System.Drawing.Color.Red;
+            this.richTextBox_Notify.Location = new System.Drawing.Point(565, 5);
+            this.richTextBox_Notify.Name = "richTextBox_Notify";
+            this.richTextBox_Notify.Size = new System.Drawing.Size(141, 369);
+            this.richTextBox_Notify.TabIndex = 19;
+            this.richTextBox_Notify.Text = "启动系统:\n1.默认是关闭时钟的，等MC设置完毕，清空输出窗口；\n2.打开时钟定时器开始搜索输出信号源；\n3.确认焦点起始在文华财经上，否则移动鼠标会捕获失败；\n" +
+    "\n中途干预：\n1.立即关闭时钟信号定时器，或者干预后立即关闭；\n2.设置好MC信号，并一定清空输出窗口；\n3.打开时钟信号源开始继续搜索；\n4.确认焦点在文华财" +
+    "经，不在MC上，在MC上将无法获取鼠标；";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(734, 378);
+            this.ClientSize = new System.Drawing.Size(715, 379);
+            this.Controls.Add(this.richTextBox_Notify);
+            this.Controls.Add(this.richTextBox_Loginfo);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox3);
@@ -542,6 +566,8 @@ namespace WeChartNotify
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.RichTextBox richTextBox_Loginfo;
+        private System.Windows.Forms.RichTextBox richTextBox_Notify;
     }
 }
 

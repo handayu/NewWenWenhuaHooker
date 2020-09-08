@@ -48,7 +48,7 @@ namespace WeChartNotify
             this.textBox_InsHandle.Text = c.IniReadValue("Config", "InsHandle");
 
             this.textBox_BuyX.Text = c.IniReadValue("Config", "BX");
-            this.textBox_BuyX.Text = c.IniReadValue("Config", "BY");
+            this.textBox_BuyY.Text = c.IniReadValue("Config", "BY");
             this.textBox_SellShortX.Text = c.IniReadValue("Config", "SX");
             this.textBox_SellShortY.Text = c.IniReadValue("Config", "SY");
             this.textBox_CoverX.Text = c.IniReadValue("Config", "CX");
@@ -240,7 +240,18 @@ namespace WeChartNotify
             }
 
             //用屏幕取点工具可以得到坐标
-            SetCursorPos(x, y);
+            bool ire = SetCursorPos(x, y);
+            if(ire)
+            {
+                AppendLogInfo("B屏幕取点工具移动鼠标到地点成功...");
+            }
+            else
+            {
+                AppendLogInfo("B屏幕取点工具移动鼠标到地点失败...");
+            }
+
+            System.Threading.Thread.Sleep(100);
+
             //点击
             mouse_event((int)(MouseEventFlags.LeftDown | MouseEventFlags.LeftUp), x, y, 0, IntPtr.Zero);
 
@@ -272,7 +283,18 @@ namespace WeChartNotify
             }
 
             //用屏幕取点工具可以得到坐标
-            SetCursorPos(x, y);
+            bool ire = SetCursorPos(x, y);
+            if (ire)
+            {
+                AppendLogInfo("S屏幕取点工具移动鼠标到地点成功...");
+            }
+            else
+            {
+                AppendLogInfo("S屏幕取点工具移动鼠标到地点失败...");
+            }
+
+            System.Threading.Thread.Sleep(100);
+
             //点击
             mouse_event((int)(MouseEventFlags.LeftDown | MouseEventFlags.LeftUp), x, y, 0, IntPtr.Zero);
         }
@@ -303,7 +325,18 @@ namespace WeChartNotify
             }
 
             //用屏幕取点工具可以得到坐标
-            SetCursorPos(x, y);
+            bool ire = SetCursorPos(x, y);
+            if (ire)
+            {
+                AppendLogInfo("C屏幕取点工具移动鼠标到地点成功...");
+            }
+            else
+            {
+                AppendLogInfo("C屏幕取点工具移动鼠标到地点失败...");
+            }
+
+            System.Threading.Thread.Sleep(100);
+
             //点击
             mouse_event((int)(MouseEventFlags.LeftDown | MouseEventFlags.LeftUp), x, y, 0, IntPtr.Zero);
         }
@@ -342,14 +375,19 @@ namespace WeChartNotify
         {
             if (this.checkBox_TimeEvent.Checked)
             {
+                //每次开启的时候，只要开启，先把oupt的显示直接先清空处理
+                //SendString(this.textBox_OutputHandle.Text, "");
+
                 this.timer2.Enabled = true;
                 this.timer2.Start();
+                m_startStr = string.Empty;
                 return;
             }
             else
             {
                 this.timer2.Enabled = false;
                 this.timer2.Stop();
+                m_startStr = string.Empty;
                 return;
             }
         }
@@ -358,43 +396,73 @@ namespace WeChartNotify
 
         private void TimerEvent_MCOutput(object sender, EventArgs e)
         {
-            if (this.textBox_OutputHandle.Text == "") return;
-            string content = SendToMulticharts(this.textBox_OutputHandle.Text);
-
-            //加入richBox 分解并判断是否下单
-            if (content != null && content != "" && content != m_startStr)
+            try
             {
-                this.richTextBox_MCInfos.AppendText(content + "\n");
-                if (richTextBox_MCInfos.Lines.Length > 100)
-                { richTextBox_MCInfos.Clear(); }
+                if (this.textBox_OutputHandle.Text == "") return;
+                string content = SendToMulticharts(this.textBox_OutputHandle.Text);
 
-                //========richtextbox滚动条自动移至最后一条记录
-                //让文本框获取焦点   
-                richTextBox_MCInfos.Focus();
-                //设置光标的位置到文本尾   
-                richTextBox_MCInfos.Select(richTextBox_MCInfos.TextLength, 0);
-                //滚动到控件光标处   
-                richTextBox_MCInfos.ScrollToCaret();
-                //拆解下单-MC打印的格式如下
-                //ClearPrintLog;
-                //print(date, "|", time, "|", close, "|", symbol, "|", "B");
-                //1200828.00 | 1500.00 | 4844.00 | CFFEX.IF 2009 | B
-                //其中最后一个字段为B/S/C；买入-卖空-平仓，文华可以自动判断
+                //加入richBox 分解并判断是否下单
+                if (content != null && content != "" && content != m_startStr)
+                {                
+                    //拆解下单-MC打印的格式如下
+                    //ClearPrintLog;
+                    //print(date, "|", time, "|", close, "|", symbol, "|", "B");
+                    //1200828.00 | 1500.00 | 4844.00 | CFFEX.IF 2009 | B
+                    //其中最后一个字段为B/S/C；买入-卖空-平仓，文华可以自动判断
 
-                string[] conStrArray = content.Split('|');
-                string datetime = conStrArray[0].Trim() + conStrArray[0].Trim();
-                string price = conStrArray[2].Trim();
-                string insArray = conStrArray[3].Trim();
-                string[] ins2 = insArray.Split('.');
-                string ins = ins2[1].Replace(" ","");
+                    string[] conStrArray = content.Split('|');
+                    string datetime = conStrArray[0].Trim() + conStrArray[0].Trim();
+                    string price = conStrArray[2].Trim();
+                    string insArray = conStrArray[3].Trim();
+                    string[] ins2 = insArray.Split('.');
+                    string ins = ins2[1].Replace(" ", "");
 
-                string side = conStrArray[4].Trim();
+                    string side = conStrArray[4].Trim();
 
-                //下单
-                ActionOrder(ins, side);
+                    AppendLogInfo("切割完成准备下单...");
 
-                m_startStr = content;
+                    //下单
+                    ActionOrder(ins, side);
+                    m_startStr = content;
+
+                    AppendLogInfo("下单完毕信息Focus到结尾...");
+
+                    ////
+                    this.richTextBox_MCInfos.AppendText(content + "\n");
+                    if (richTextBox_MCInfos.Lines.Length > 100)
+                    { richTextBox_MCInfos.Clear(); }
+
+                    //========richtextbox滚动条自动移至最后一条记录
+                    //让文本框获取焦点   
+                    richTextBox_MCInfos.Focus();
+                    //设置光标的位置到文本尾   
+                    richTextBox_MCInfos.Select(richTextBox_MCInfos.TextLength, 0);
+                    //滚动到控件光标处   
+                    richTextBox_MCInfos.ScrollToCaret();
+
+                }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }          
+        }
+
+        private void AppendLogInfo(string str)
+        {
+            this.richTextBox_Loginfo.AppendText(DateTime.Now.ToString() + str + "\n");
+
+            if (richTextBox_Loginfo.Lines.Length > 100)
+            { richTextBox_Loginfo.Clear(); }
+
+            //========richtextbox滚动条自动移至最后一条记录
+            //让文本框获取焦点   
+            richTextBox_Loginfo.Focus();
+            //设置光标的位置到文本尾   
+            richTextBox_Loginfo.Select(richTextBox_MCInfos.TextLength, 0);
+            //滚动到控件光标处   
+            richTextBox_Loginfo.ScrollToCaret();
+
         }
 
         private void ActionOrder(string ins, string side)
@@ -402,22 +470,30 @@ namespace WeChartNotify
             //输入合约；
             if (this.textBox_InsHandle.Text == "") return;
             SendString(this.textBox_InsHandle.Text, ins);
+            AppendLogInfo("输入合约完毕...");
+
             //下单
-            if(side == "B")
+            if (side == "B")
             {
                 button_Buy_Click(null, null);
+                AppendLogInfo("买入已发送...");
+
                 return;
             }
 
             if (side == "S")
             {
                 button_SellShort_Click(null, null);
+                AppendLogInfo("卖空已发送...");
+
                 return;
             }
 
             if (side == "C")
             {
                 button_Cover_Click(null, null);
+                AppendLogInfo("平仓已发送...");
+
                 return;
             }
 
@@ -441,9 +517,6 @@ namespace WeChartNotify
             c.IniWriteValue("Config", "CY", this.textBox_CoverY.Text);
 
             c.IniWriteValue("Config", "MCHandle", this.textBox_OutputHandle.Text);
-
-            this.Hide();
-            e.Cancel = true;
         }
     }
 }

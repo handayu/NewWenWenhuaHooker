@@ -59,6 +59,7 @@ namespace WeChartNotify
         {
             SendMessage(intPtr, WM_SETTEXT, IntPtr.Zero, "");
             SendMessage(intPtr, WM_SETTEXT, IntPtr.Zero, info);
+
         }
 
         /// <summary>

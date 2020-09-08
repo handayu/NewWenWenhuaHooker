@@ -125,22 +125,67 @@
 手数和类型暂时全部为文华默认的1/对手价,Handle也可以暂时不做映射(MC只需要打印时间，品种，方向，股指其他默认即可)
 
 multicharts测试打印信号:
-var:
-  intrabarpersist  var1(0);
+inputs: 
+	int OpenShares(1),
+	Direction(1);
+	
+inputs:  
+	Price1( Close of data2 ), 
+	Length1( 20 ),
+	Price2( Close of data1 ), 
+	Length2( 2 );
 
-   	var1 = var1 + 1;
-if Mod(var1,2) = 0 then begin 
-	ClearPrintLog;
-	print(date + var1 ,"|",time,"|",close,"|",symbol,"|","B");      
+variables:  
+	varFC( 0 ),
+	varFShort(0);
+
+varFC  = AverageFC( Price1, Length1 ) of data2;
+varFShort= AverageFC( Price2, Length2);
+   
+if Direction = 1 then begin 
+ 	if varFShort Cross Above varFC then begin 
+		Buy ("BK") OpenShares shares next bar at market ;
+	     	ClearPrintLog;
+		print(date,"|",time,"|",close,"|",symbol,"|","B");	
+	end;
+	               
+	if varFShort Cross Under varFC then begin 
+		Sell ("BP") OpenShares shares next bar at market ;
+	     	ClearPrintLog;
+		print(date,"|",time,"|",close,"|",symbol,"|","C");	
+	end;			  
+end;
+  
+if Direction = -1 then begin 
+ 	if varFShort Cross Under varFC then begin 
+		SellShort ("SK") OpenShares shares next bar at market ;
+	     	ClearPrintLog;
+		print(date,"|",time,"|",close,"|",symbol,"|","S");	
+	end;
+	               
+	 if varFShort Cross Above varFC then begin 
+		BuytoCover ("SP") OpenShares shares next bar at market ;
+
+	       ClearPrintLog;
+		print(date,"|",time,"|",close,"|",symbol,"|","C");	
+	end;			  
 end;
 
-if Mod(var1,2) &lt;&gt; 0 then begin 
-	ClearPrintLog;
-	print(date + var1 ,"|",time,"|",close,"|",symbol,"|","S");      
+////
+var:intrabarpersist  ID(0);
+
+if getappinfo(aiStrategyAuto) = 1 then begin
+		if(Text_Exist(ID)) then text_delete(ID);
+		ID= Text_New(0, 0, 0, "Auto-Running");
+		Text_Float(ID, 5, 100);
+		Text_SetBGColor(ID,Green);
+		text_setsize(ID,10);
+		text_setcolor(ID,Green);
 end;
 
 
-RecalcLastBarAfter(3);
+
+
 </value>
   </data>
   <metadata name="timer2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
