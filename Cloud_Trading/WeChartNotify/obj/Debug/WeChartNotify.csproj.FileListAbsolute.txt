@@ -129,3 +129,4 @@ C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\ob
 C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.csproj.CopyComplete
 C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.exe
 C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.pdb
+C:\Users\Administrator\Desktop\NewWenWenhuaHooker\Cloud_Trading\WeChartNotify\obj\Debug\WeChartNotify.csprojAssemblyReference.cache

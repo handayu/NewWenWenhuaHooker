@@ -448,10 +448,10 @@ namespace WeChartNotify
             // richTextBox1
             // 
             this.richTextBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.richTextBox1.Location = new System.Drawing.Point(4, 208);
+            this.richTextBox1.Location = new System.Drawing.Point(4, 212);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(317, 104);
+            this.richTextBox1.Size = new System.Drawing.Size(317, 100);
             this.richTextBox1.TabIndex = 18;
             this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
             // 
@@ -471,7 +471,7 @@ namespace WeChartNotify
             // 
             this.richTextBox_Notify.Font = new System.Drawing.Font("SimSun", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.richTextBox_Notify.ForeColor = System.Drawing.Color.Red;
-            this.richTextBox_Notify.Location = new System.Drawing.Point(565, 5);
+            this.richTextBox_Notify.Location = new System.Drawing.Point(562, 12);
             this.richTextBox_Notify.Name = "richTextBox_Notify";
             this.richTextBox_Notify.Size = new System.Drawing.Size(141, 369);
             this.richTextBox_Notify.TabIndex = 19;
@@ -483,7 +483,7 @@ namespace WeChartNotify
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(715, 379);
+            this.ClientSize = new System.Drawing.Size(709, 379);
             this.Controls.Add(this.richTextBox_Notify);
             this.Controls.Add(this.richTextBox_Loginfo);
             this.Controls.Add(this.richTextBox1);

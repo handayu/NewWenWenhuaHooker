@@ -177,6 +177,12 @@ namespace WeChartNotify
             handel.SendMessageToTextBox((IntPtr)Convert.ToInt32(hexptr, 16), info);
         }
 
+        private void SendButton(string hexptr, string buStr)
+        {
+            SendMessageHandle handel = new SendMessageHandle();
+            handel.SendMessageToButton((IntPtr)Convert.ToInt32(hexptr, 16), (IntPtr)Convert.ToInt32(buStr, 16));
+        }
+
         /// <summary>
         /// 动态设置坐标
         /// </summary>
@@ -239,18 +245,20 @@ namespace WeChartNotify
                 int.TryParse(this.textBox_BuyY.Text, out y);
             }
 
-            //用屏幕取点工具可以得到坐标
-            bool ire = SetCursorPos(x, y);
-            if(ire)
-            {
-                AppendLogInfo("B屏幕取点工具移动鼠标到地点成功...");
-            }
-            else
-            {
-                AppendLogInfo("B屏幕取点工具移动鼠标到地点失败...");
-            }
+            mouse_event((int)(MouseEventFlags.Absolute | MouseEventFlags.Move), x, y, 0, IntPtr.Zero);
 
-            System.Threading.Thread.Sleep(100);
+            //用屏幕取点工具可以得到坐标
+            //bool ire = SetCursorPos(x, y);
+            //if(ire)
+            //{
+            //    AppendLogInfo("B屏幕取点工具移动鼠标到地点成功...");
+            //}
+            //else
+            //{
+            //    AppendLogInfo("B屏幕取点工具移动鼠标到地点失败...");
+            //}
+
+            //System.Threading.Thread.Sleep(100);
 
             //点击
             mouse_event((int)(MouseEventFlags.LeftDown | MouseEventFlags.LeftUp), x, y, 0, IntPtr.Zero);
@@ -282,7 +290,8 @@ namespace WeChartNotify
                 int.TryParse(this.textBox_SellShortY.Text, out y);
             }
 
-            //用屏幕取点工具可以得到坐标
+            //用屏幕取点工具可以得到坐
+
             bool ire = SetCursorPos(x, y);
             if (ire)
             {
@@ -293,7 +302,7 @@ namespace WeChartNotify
                 AppendLogInfo("S屏幕取点工具移动鼠标到地点失败...");
             }
 
-            System.Threading.Thread.Sleep(100);
+            //System.Threading.Thread.Sleep(100);
 
             //点击
             mouse_event((int)(MouseEventFlags.LeftDown | MouseEventFlags.LeftUp), x, y, 0, IntPtr.Zero);
@@ -335,7 +344,7 @@ namespace WeChartNotify
                 AppendLogInfo("C屏幕取点工具移动鼠标到地点失败...");
             }
 
-            System.Threading.Thread.Sleep(100);
+            //System.Threading.Thread.Sleep(100);
 
             //点击
             mouse_event((int)(MouseEventFlags.LeftDown | MouseEventFlags.LeftUp), x, y, 0, IntPtr.Zero);
@@ -393,12 +402,15 @@ namespace WeChartNotify
         }
 
         private string m_startStr = string.Empty;
-
         private void TimerEvent_MCOutput(object sender, EventArgs e)
         {
             try
             {
-                if (this.textBox_OutputHandle.Text == "") return;
+                if (this.textBox_OutputHandle.Text == "")
+                {
+                    return;
+                }
+
                 string content = SendToMulticharts(this.textBox_OutputHandle.Text);
 
                 //加入richBox 分解并判断是否下单
@@ -518,5 +530,6 @@ namespace WeChartNotify
 
             c.IniWriteValue("Config", "MCHandle", this.textBox_OutputHandle.Text);
         }
+
     }
 }
